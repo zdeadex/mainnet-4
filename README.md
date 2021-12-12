@@ -71,6 +71,7 @@ chihuahuad keys add <key-name> --recover
 ```
 chihuahuad add-genesis-account <key-name> 5000001000000uhuahua
 ```
+Note: if you receive message: `failed to get address from Keybase:`, add `--keyring-backend os`
 
 #### Create Gentx
 ```
