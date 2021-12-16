@@ -42,7 +42,6 @@ Output should be: `go version go1.17.5 linux/amd64`
 ```bash:
 git clone https://github.com/ChihuahuaChain/chihuahua.git
 cd chihuahua
-git checkout current
 make install
 ```
 Note: there is no tag to build off of, just use master for now
