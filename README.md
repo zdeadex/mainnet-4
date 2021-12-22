@@ -51,6 +51,11 @@ Note: there is no tag to build off of, just use master for now
 chihuahuad init $MONIKER_NAME --chain-id chihuahua-1
 ```
 
+### Download Genesis
+```bash:
+wget -O ~/.chihuahua/config/genesis.json https://raw.githubusercontent.com/ChihuahuaChain/mainnet/main/genesis.json
+```
+
 ### Add/recover keys
 ```bash:
 # To create new keypair - make sure you save the mnemonics!
