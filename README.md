@@ -66,6 +66,35 @@ chihuahuad keys add <key-name>
 chihuahuad keys add <key-name> --recover
 ```
 
+## Instructions for post-genesis validators
+
+### Create the validator
+
+Note that proposal #1 agrees that all validators set commission to at
+least 5%!
+
+```bash:
+chihuahuad tx staking create-validator \
+  --from "<key-name>" \
+  --amount "10000000uhuahua" \
+  --pubkey "$(chihuahuad tendermint show-validator)" \
+  --chain-id "chihuahua-1" \
+  --moniker "<moniker>" \
+  --commission-max-change-rate 0.01 \
+  --commission-max-rate 0.20 \
+  --commission-rate 0.10 \
+  --min-self-delegation 1 \
+  --details "<details>" \
+  --security-contact "<contact>" \
+  --website "<website>" \
+  --gas-prices "0.025uhuahua"
+```
+
+### Backup critical files
+```bash:
+priv_validator_key.json
+```
+
 ## Instructions for Genesis Validators
 
 ### GenTx Creation
