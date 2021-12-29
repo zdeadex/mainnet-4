@@ -103,8 +103,7 @@ priv_validator_key.json
 ```
 
 
-##[OUTDATED]
-## Instructions for Genesis Validators
+## [OUTDATED] - Instructions for Genesis Validators
 
 ### GenTx Creation
 
