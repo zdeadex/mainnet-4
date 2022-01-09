@@ -79,7 +79,7 @@ pruning-keep-every = "0"
 pruning-interval = "10"
 ```
 
-NOTE: If your node was already active before pruning/indexing tweaks you will need to resync from scratch again.
+NOTE: If your node was already active before pruning tweaks you will need to resync from scratch again, if you only turned off the indexing you can simply restart your node and erase ~/.chihuahua/data/tx_index.db folder.
 
 ### Add/recover keys
 ```bash:
