@@ -63,7 +63,7 @@ peers="b140eb36b20f3d201936c4757d5a1dcbf03a42f1@216.238.79.138:26656,19900e1d2b1
 sed -i.bak -e "s/^seeds *=.*/seeds = \"$seeds\"/; s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.chihuahuad/config/config.toml
 ```
 ### Customize Pruning and Indexing (Optional)
-Due to the high number of transaction on the chain in order to save some hard disk space you might want to tweak pruning and indexing as follows
+Due to the high number of transactions on the chain in order to save some hard disk space you might want to tweak pruning and indexing as follows
 
 - Replace 'kv' to 'null' on ~/.chihuahua/config.toml
 
