@@ -64,7 +64,6 @@ sed -i.bak -e "s/^seeds *=.*/seeds = \"$seeds\"/; s/^persistent_peers *=.*/persi
 ```
 ### Customize Pruning and Indexing (Optional)
 Due to the high number of transactions on the chain in order to save some hard disk space you might want to tweak pruning and indexing as follows
-
 - Replace 'kv' to 'null' on ~/.chihuahua/config.toml
 
 ```indexer = "null"```
@@ -79,6 +78,8 @@ pruning-keep-recent = "5000"
 pruning-keep-every = "0"
 pruning-interval = "10"
 ```
+
+NOTE: If your node was already active before pruning/indexing tweaks you will need to resync from scratch again.
 
 ### Add/recover keys
 ```bash:
